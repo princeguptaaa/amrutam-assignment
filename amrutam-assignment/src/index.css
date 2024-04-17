@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #3A643B;
+    --secondary-color: #000;
+    --creme-color : #FFF7E2;
+    --littleGrey-color : #C9C9C9;
+    --border-color : #FFF1CF;
+    --underline-color : #C3D0C4;
+}
+
+@font-face {
+    font-family: "DINPro-Light";
+    src: url("assets/fonts/DINPro-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro-Medium";
+    src: url("assets/fonts/DINPro-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro-Bold";
+    src: url("assets/fonts/DINPro-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro-Black";
+    src: url("assets/fonts/DINPro-Black\ tr.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NexaLight";
+    src: url("assets/fonts/NexaLight.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer components {
+    .btn-primary {
+        @apply  bg-primary-color px-[39px] py-3 pb-[15px] font-DINProMedium text-white rounded-[11px] text-[20px];
+    }
+
+    .btn-secondary {
+        @apply px-[37px] py-3 pb-[15px]  text-[20px] flex items-center font-DINProMedium justify-center text-primary-color border border-primary-color rounded-[11px];
+    }
+
+    .nav-list {
+        @apply flex items-center justify-center font-DINProMedium text-[20px] leading-6 capitalize;
+    }
+
+    p {
+        @apply capitalize text-primary-color text-[18px];
+    }
+}
