@@ -82,7 +82,7 @@ export const CustomerReview = ({ consultedFor, consultedForStyling, name, locati
 
           </div>
 
-          <h6 className="font-DMSans text-[22px] my-3 font-[700]">{heading}</h6>
+          <h4 className="font-DMSans text-[22px] my-3 font-[700]">{heading}</h4>
           <p className="text-[18px] text-[#555] leading-[30px]">{review}</p>
         </div>
 

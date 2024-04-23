@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="xsm:w-[100%] xsm:py-4 sm:justify-between w-[100%] flex justify-between items-center m-3">
                 <ul onClick={() => {
                     showHam(true)
-                }} className="xsm:absolute xl:hidden relative left-0 m-4 p-2 flex flex-col gap-1 *:rounded-full md:hidden">
+                }} className="xsm:absolute lg:hidden xl:hidden relative left-0 m-4 p-2 flex flex-col gap-1 *:rounded-full md:hidden">
                     <li className="w-7 h-[3px] bg-primary-color"></li>
                     <li className="w-7 h-[3px] bg-primary-color"></li>
                     <li className="w-7 h-[3px] bg-primary-color"></li>
