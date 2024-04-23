@@ -16,7 +16,7 @@ const Navbar = () => {
                     <li className="w-7 h-[3px] bg-primary-color"></li>
                 </ul>
 
-                {Ham && <div className="absolute z-50 h-screen w-full bg-creme top-0 left-0">
+                {Ham && <div className="fixed overflow-hidden transition-all z-50 h-[100vh] w-full bg-creme top-0 left-0">
                     <button onClick={() => {
                         showHam(false)
                     }} className="flex absolute top-5 items-center hover:bg-primary-color justify-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </ul>
                     </button>
 
-                    <ul className="space-y-6 flex flex-col items-start justify-center mx-auto fixed top-[30%] left-[30%]">
+                    <ul className="space-y-6 transition-all flex flex-col items-start justify-center mx-auto fixed top-[30%] left-[30%]">
                         <li className="font-DINProMedium text-2xl"><Link to={""}>Home</Link></li>
                         <li className="font-DINProBold text-2xl text-primary-color"><Link to={""}>Find Doctors</Link></li>
                         <li className="font-DINProMedium text-2xl"><Link to={""}>About Us</Link></li>

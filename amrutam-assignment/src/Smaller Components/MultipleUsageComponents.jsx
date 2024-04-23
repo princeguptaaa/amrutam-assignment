@@ -48,7 +48,7 @@ export const Benefits = ({ src, heading, mainClasses, text1, text2, text3, imgCl
 
 export const Card = ({ number, heading, body }) => {
   return (
-    <div className="grid min-w-[300px] justify-items-center py-8 bg-creme border-t-4 rounded-[20px] border-primary-color">
+    <div className="grid min-w-[300px] min-h-[320px] justify-items-center py-8 bg-creme border-t-4 rounded-[20px] border-primary-color">
       <div className="text-5xl font-DINProBold text-white rounded-full w-[90px] h-[90px] bg-primary-color-light border border-primary-color mb-4 flex items-center justify-center">{number}</div>
       <p className="text-[24px] font-DINProBold primary-color">{heading}</p>
       <p className="text-[20px] p-2 font-DINProLight leading-[120%] text-[#2E2E2E] text-center px-5">{body}</p>

@@ -272,7 +272,7 @@ const Header = () => {
                             <p className="text-lg">[ Meaning: The Goal of Ayurveda is to maintain the health of a healthy person and to cure the disease of a diseased person. ]</p>
                         </div>
                         <div className="card max-w-[100%] max-h-[285px] xsm:Objectfit sm:h-full Objectfit overflow-hidden rounded-[20px]">
-                            <img className="object-fill object-center xsm:Objectfit" src={TwoGirls} alt="" />
+                            <img className="object-fill object-center xsm:Objectfit" src={TwoGirls} alt="" style={{objectPosition:window.screen.width > 500 ? "0px -100px ": "0px -50px"}} />
                         </div>
                         <div className="card flex gap-5 flex-col items-start bg-white rounded-[20px] border-t-4 border-primary-color p-6 py-8">
                             <p className="font-DINProBold text-2xl">Precise Diagnosis</p>
@@ -282,8 +282,8 @@ const Header = () => {
                             <p className="font-DINProBold text-2xl">Zero side-effects</p>
                             <p className="font-DINProLight font-[600] text-[#414141] text-start pr-2 text-[20px]">Ayurvedic treatments are devoid of chemicals, and are based completely on natural herbs</p>
                         </div>
-                        <div className="card overflow-hidden max-h-[285px]  h-full w-full rounded-[20px]">
-                            <img className="scale-125" src={Product} alt="" />
+                        <div className="card overflow-hidden max-h-[285px] h-full w-full rounded-[20px]">
+                            <img className="max-xl:scale-150" src={Product} alt="" />
                         </div>
                         <div className="card flex flex-col items-start justify-start bg-white rounded-[20px] border-t-4 border-primary-color p-6 py-8 gap-5">
                             <p className="font-DINProBold text-2xl">Individual Treatment
@@ -291,7 +291,7 @@ const Header = () => {
                             <p className="font-DINProLight font-[600] text-pretty w-[110%] text-[#414141] text-start pr-2 text-[20px]">all Treatments are personalized based on a person&apos;s unique constitution and health concerns.</p>
                         </div>
                         <div className="card overflow-clip max-h-[285px]  rounded-[20px]">
-                            <img className="object-cover" src={GirlWProduct} alt="" />
+                            <img className="object-cover" src={GirlWProduct} alt="" style={{objectPosition:window.screen.width > 500 ? "0px -100px ": "0px -50px"}} />
                         </div>
                     </div>
 
@@ -354,7 +354,7 @@ const Header = () => {
                     pagination={{ clickable: true }}
                     spaceBetween={20}
                     slidesPerView={1}
-                    style={{ padding: "50px 30px", width: "100%", display: "grid", minHeight: "300px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}
+                    style={{ padding: "50px 30px", width: "85%", display: "grid", minHeight: "300px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}
                 >
                     <SwiperSlide>
                         <CustomerReview
@@ -496,7 +496,7 @@ const Header = () => {
                     </div>
                     <div className="flex m-0 flex-col ">
                         <div className="h-[258px] max-xl:hidden -translate-x-16 relative w-[258px] bg-[#3A643B29] rounded-full"></div>
-                        <div className="absolute z-50 max-xl:hidden overflow-x-hidden">
+                        <div className="absolute z-50 w-[30rem] max-xl:hidden overflow-x-hidden">
                             <img draggable={false} className="select-none" src={phonemockup} alt="" />
                         </div>
                         <div className="h-[258px] max-xl:hidden z-10 translate-x-40 w-[258px] bg-[#3A643B29] rounded-full"></div>
