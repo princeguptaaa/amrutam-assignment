@@ -5,10 +5,46 @@
 :root {
     --primary-color: #3A643B;
     --secondary-color: #000;
-    --creme-color : #FFF7E2;
-    --littleGrey-color : #C9C9C9;
-    --border-color : #FFF1CF;
-    --underline-color : #C3D0C4;
+    --creme-color: #FFF7E2;
+    --littleGrey-color: #C9C9C9;
+    --border-color: #FFF1CF;
+    --underline-color: #C3D0C4;
+    --primary-color-light: rgba(58, 100, 59, 0.66);
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("assets/fonts/Nunito-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("assets/fonts/Gotham\ Rounded\ Light.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM-Sans";
+    src: url("assets/fonts/DMSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINMedium";
+    src: url("assets/fonts/DIN\ Medium\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inknut";
+    src: url("assets/fonts/InknutAntiqua-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -38,6 +74,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "NexaLight";
     src: url("assets/fonts/NexaLight.otf") format("opentype");
@@ -46,12 +83,17 @@
 }
 
 @layer components {
+
+    .ignore-br br {
+        @apply hidden;
+    }
+
     .btn-primary {
-        @apply  bg-primary-color px-[39px] py-3 pb-[15px] font-DINProMedium text-white rounded-[11px] text-[20px];
+        @apply bg-primary-color px-[39px] py-3 pb-[15px] font-DINProMedium text-white rounded-[11px] text-[20px];
     }
 
     .btn-secondary {
-        @apply px-[37px] py-3 pb-[15px]  text-[20px] flex items-center font-DINProMedium justify-center text-primary-color border border-primary-color rounded-[11px];
+        @apply px-[37px] py-3 pb-[15px] text-[20px] flex items-center font-DINProMedium justify-center text-primary-color border border-primary-color rounded-[11px];
     }
 
     .nav-list {
@@ -59,6 +101,47 @@
     }
 
     p {
-        @apply capitalize text-primary-color text-[18px];
+        @apply text-primary-color text-[18px];
     }
 }
+
+@layer base {
+
+    img {
+        @apply select-none;
+    }
+
+    h5 {
+        @apply font-DINProBold text-[1.25rem] text-wrap text-primary-color;
+    }
+
+    h3 {
+        @apply inline max-sm:leading-[36px] max-sm:border-none leading-[2.5rem] text-primary-color font-DINProBold text-5xl px-6 border-b-[.32rem] border-underline-color
+    }
+}
+
+
+.Objectfit {
+    object-position: 0px -100px;
+}
+
+@media screen and (min-width: 501px) {
+    .Objectfit {
+        object-position: 0px -100px;
+    }
+}
+
+.swiper-pagination {
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #000;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: var(--primary-color);
+  }

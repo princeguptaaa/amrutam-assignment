@@ -2,7 +2,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     bottom: 0;
     left: 0;
     background: linear-gradient(90deg, rgba(18, 18, 18, 0.88) 1.03%, rgba(18, 18, 18, 0.92) 50.18%, rgba(1, 1, 1, 0.00) 95.15%);
@@ -14,4 +14,43 @@
     color: #000;
     margin: 0;
     padding: 0;
+}
+
+.linear-gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.59) 2.52%, rgba(0, 0, 0, 0.53) 22.87%, rgba(14, 14, 14, 0.40) 100%);
+}
+
+.reviewGradient {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #0B0B0B 0%, rgba(11, 11, 11, 0.79) 100%);
+}
+
+.review-speiciality {
+    border-radius: 18px;
+    background: rgba(58, 100, 59, 0.12);
+}
+
+.slightish-green {
+    background: rgba(219, 227, 220, 0.39);
+}
+
+.onPhone_header_gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.87) 0%, rgba(34, 34, 34, 0.48) 100%);
 }
