@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="space-y-3">
                 <h5>Information</h5>
                 <ul className="[&>li]:font-DINProLight [&>li]:font-[600] [&>li]:text-[#474747] space-y-2">
-                    <li><Link to={""}>About Us</Link></li>
+                    <li><Link to={"/about"}>About Us</Link></li>
                     <li><Link to={""}>Terms and Conditions</Link></li>
                     <li><Link to={""}>Privacy Policy</Link></li>
                     <li><Link to={""}>Privacy Policy for Mobile Apps</Link></li>
